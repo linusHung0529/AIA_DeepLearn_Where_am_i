@@ -1,0 +1,15 @@
+CALsuburb, 9
+PARoffice, 7
+bedroom, 12
+coast, 10
+forest, 4
+highway, 14
+industrial, 2
+insidecity, 3
+kitchen, 0
+livingroom, 5
+mountain, 8
+opencountry, 6
+store, 11
+street, 1
+tallbuilding, 13
