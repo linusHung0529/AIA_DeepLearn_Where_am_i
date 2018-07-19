@@ -5,18 +5,22 @@ train資料集，總共分布於15個類別資料夾。而test資料集，存在一起，目標:分類test資料
 
 kaggle：https://www.kaggle.com/c/aia-tc-image-cla-where-am-i/leaderboard
 <br>
-# 解題步驟
-1.load_data<br>
-2.架設model<br>
-3.用各式方法提高model成功率
-## load_data
+## 解題步驟
+1.定義問題<br>
+2.資料匯入<br>
+3.資料預處理<br>
+4.資料增強<br>
+5.建立模型<br>
+6.進行訓練<br>
+7.進行預測
+## 資料匯入
 在最初遇到的第一個問題就是載入train資料集，以往遇到的題目，train、test資料集都是可以直接從套件上load.data就可以了，但這次的題目train分布在各資料夾中。<br>
 經過很長一段時間的奮鬥，最終將load data這個問題分解成幾個步驟。<br>
 1.先透過mapping.txt取得所有資料夾名稱。<br>
 2.用os套件造訪mapping中所有資料夾，並生成所有資料夾中圖片路徑。<br>
 3.用cv2套件，造訪所有圖片，並將它們match成train dataset<br>
-## 架設model
-在解決了load_data問題後，遇到的第二個問題是model的選擇，因為我是初學者，所以只知道MLP network，在一開始用MLP training之後，調了各種參數，
+## 建立模型
+在解決了資料匯入問題後，遇到的第二個問題是模型的選擇，因為我是初學者，所以只知道MLP network，在一開始用MLP training之後，調了各種參數，
 predict的結果依然只有20%左右。代表著我已經碰到了MLP在這個問題上的極限了，之後google了許久，發現圖片分類，有兩個方向。<br>
 1.遷移式學習 trainfer Learning<br>
 2.卷積式網路 CNN<br>
@@ -29,3 +33,18 @@ predict的結果依然只有20%左右。代表著我已經碰到了MLP在這個問題上的極限了，之後goo
 overfitting的情況非常嚴重，因為圖片不大，資訊不多，所以模組透過400epcho左右，就能完全被起來train set了。為了解決這個問題，首先我加大了圖片大小到128*128，
 隨著圖片增大，我也加深了CNN的層數，目的是讓CNN抽取出來的特徵高階，hidden層我也改用兩層分別為512、216，這樣出來的結果大大提升了準確率，讓準確率來到45%左右。
 接著我調適參數(epcho、batch_size、lr)，其準確率有提升至50%左右。但也差不多到CNN對於這個問題的極限了。接著後續為了提升準確率，我選擇從train dataset下手。
+
+##檔案
+1.定義問題<br>
+2.資料匯入<br>
+3.資料預處理<br>
+4.資料增強<br>
+5.建立模型<br>
+6.進行訓練<br>
+以上六點 都是在AIA_Where_am_i_CNN.ipynb檔中執行<br><br>
+
+7.進行預測<br>
+8.上傳驗證結果<br>
+以上兩點 在use_model.ipynb檔中執行<br><br>
+
+AIA_Where_am_i_CNN_scope.ipynb檔是我將模組建構的部分，用scope整理過後的檔案。<br>
