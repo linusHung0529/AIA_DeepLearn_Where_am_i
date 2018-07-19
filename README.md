@@ -34,7 +34,7 @@ overfittingªº±¡ªp«D±`ÄY­«¡A¦]¬°¹Ï¤ù¤£¤j¡A¸ê°T¤£¦h¡A©Ò¥H¼Ò²Õ³z¹L400epcho¥ª¥k¡A´N¯
 ÀHµÛ¹Ï¤ù¼W¤j¡A§Ú¤]¥[²`¤FCNNªº¼h¼Æ¡A¥Øªº¬OÅýCNN©â¨ú¥X¨Óªº¯S¼x°ª¶¥¡Ahidden¼h§Ú¤]§ï¥Î¨â¼h¤À§O¬°512¡B216¡A³o¼Ë¥X¨Óªºµ²ªG¤j¤j´£¤É¤F·Ç½T²v¡AÅý·Ç½T²v¨Ó¨ì45%¥ª¥k¡C
 ±µµÛ§Ú½Õ¾A°Ñ¼Æ(epcho¡Bbatch_size¡Blr)¡A¨ä·Ç½T²v¦³´£¤É¦Ü50%¥ª¥k¡C¦ý¤]®t¤£¦h¨ìCNN¹ï©ó³o­Ó°ÝÃDªº·¥­­¤F¡C±µµÛ«áÄò¬°¤F´£¤É·Ç½T²v¡A§Ú¿ï¾Ü±qtrain dataset¤U¤â¡C
 
-##ÀÉ®×
+## ÀÉ®×
 1.©w¸q°ÝÃD<br>
 2.¸ê®Æ¶×¤J<br>
 3.¸ê®Æ¹w³B²z<br>
